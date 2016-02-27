@@ -12,30 +12,28 @@ import Alamofire
 
 class PollData{
     static let URL = "https://elections.huffingtonpost.com/pollster/api/polls.json"
-    static let GOP_POLL_KEY = "2016 National Republican Primary"
+    static let GOP_POLL = 0
+    static let DEM_POLL = 1
+    static let NAME_KEY = "name"
+    static let POLL_DATA_KEY = "subpopulations"
+    static let QUESTIONS_KEY = "questions"
     
-    static func getTrumpPollResults(funcSuccess: (results: [JSON])-> Void){
+    static func getTrumpPollResults(funcSuccess: (pollResults: [JSON])-> Void){
         Alamofire.request(.GET, URL).validate()
             .responseJSON{ response in
                 switch response.result {
                 case .Success:
                     if let value = response.result.value {
                         let json = JSON(value)
-                        let key = "questions"
-                        var jsonArray = json.arrayValue
-                        var pollData:[JSON]!
                         
-                        for j in jsonArray{
-                            var polls = j[key].arrayValue[0]
-                            print(polls["name"])
-                            if( polls["name"].string == GOP_POLL_KEY){
-                                    pollData = polls["subpopulations"].arrayValue
-//                                    print(pollData)
-                                    break
-                            }
-                        }
+                        let jsonArray = json.arrayValue[0]
+//                        print(jsonArray)
+                        var pollsGOP = jsonArray[QUESTIONS_KEY].arrayValue[GOP_POLL]
+                        var pollsDem = jsonArray[QUESTIONS_KEY].arrayValue[DEM_POLL]
+//                        print("\n\(jsonArray[QUESTIONS_KEY].arrayValue[0])")
                         
-                        funcSuccess(results: pollData)
+                        var pollData = [pollsGOP[POLL_DATA_KEY].arrayValue.first!.dictionaryValue, pollsDem[POLL_DATA_KEY].arrayValue.first!.dictionaryValue]
+                        print(pollData)
                     }
                 case .Failure(let error):
                     print(error)

@@ -32,8 +32,6 @@ class GameViewController: UIViewController {
                 sound.play()
             }
         }
-        
-        
     }
 
     @IBAction func turnMusicOff(sender: AnyObject) {

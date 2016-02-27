@@ -10,11 +10,13 @@ import SpriteKit
 
 class GameScene : SKScene {
     
-    override init() {
-        super.init(/*size: size*/)
+    var trumpy : Trumpy!
+    
+    override func didMoveToView(view: SKView) {
+        backgroundColor = UIColor.blueColor()
         
-        let background = SKSpriteNode(imageNamed: "")
-        addChild(background)
+        trumpy = Trumpy()
+        trumpy.position = CGPointMake(view.frame.width/2, view.frame.height/2)
         
         
     }
@@ -22,13 +24,5 @@ class GameScene : SKScene {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not beenplemed")
     }
-
-    override func didMoveToView(view: SKView) {
-        
-        anchorPoint = CGPointMake(0.5, 0.5)
-        
-        
-    }
-    
-    
+   
 }

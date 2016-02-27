@@ -17,6 +17,8 @@
 		B0DEAF6F1C81D96E00159E06 /* mil_stack.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF671C81D96E00159E06 /* mil_stack.png */; };
 		B0DEAF701C81D96E00159E06 /* TrumpThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */; };
 		B0DEAF721C81DFE200159E06 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEAF711C81DFE200159E06 /* GameScene.swift */; };
+		CC876D4C1C821EF500377ECD /* endGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC876D4B1C821EF500377ECD /* endGame.storyboard */; };
+		CC876D4E1C821F1400377ECD /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC876D4D1C821F1400377ECD /* EndGameViewController.swift */; };
 		CCE278AA1C81FD7900E48759 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCE278A91C81FD7900E48759 /* song.mp3 */; };
 		CCE80E5C1C817A2900EAAC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */; };
 		CCE80E5E1C817A2900EAAC89 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE80E5D1C817A2900EAAC89 /* GameViewController.swift */; };
@@ -39,6 +41,8 @@
 		B0DEAF671C81D96E00159E06 /* mil_stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mil_stack.png; sourceTree = "<group>"; };
 		B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpThrowView.swift; sourceTree = "<group>"; };
 		B0DEAF711C81DFE200159E06 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CC876D4B1C821EF500377ECD /* endGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = endGame.storyboard; sourceTree = "<group>"; };
+		CC876D4D1C821F1400377ECD /* EndGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		CCE278A91C81FD7900E48759 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		CCE80E581C817A2900EAAC89 /* TrumpeJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpeJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CC876D4A1C821ECF00377ECD /* endGame */ = {
+			isa = PBXGroup;
+			children = (
+				CC876D4B1C821EF500377ECD /* endGame.storyboard */,
+				CC876D4D1C821F1400377ECD /* EndGameViewController.swift */,
+			);
+			name = endGame;
+			sourceTree = "<group>";
+		};
 		CCE80E4F1C817A2900EAAC89 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +115,7 @@
 		CCE80E5A1C817A2900EAAC89 /* TrumpeJump */ = {
 			isa = PBXGroup;
 			children = (
+				CC876D4A1C821ECF00377ECD /* endGame */,
 				CCE278A91C81FD7900E48759 /* song.mp3 */,
 				B0DEAF711C81DFE200159E06 /* GameScene.swift */,
 				CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */,
@@ -191,6 +205,7 @@
 				B0DEAF6A1C81D96E00159E06 /* dt_arm_r.png in Resources */,
 				B0DEAF691C81D96E00159E06 /* dt_arm_l.png in Resources */,
 				CCE80E661C817A2900EAAC89 /* Assets.xcassets in Resources */,
+				CC876D4C1C821EF500377ECD /* endGame.storyboard in Resources */,
 				B0DEAF6F1C81D96E00159E06 /* mil_stack.png in Resources */,
 				CCE278AA1C81FD7900E48759 /* song.mp3 in Resources */,
 				B0DEAF6C1C81D96E00159E06 /* dt_legs.png in Resources */,
@@ -260,6 +275,7 @@
 				CCE80E5E1C817A2900EAAC89 /* GameViewController.swift in Sources */,
 				CCE80E5C1C817A2900EAAC89 /* AppDelegate.swift in Sources */,
 				CCE85F861C81906700B7DB80 /* PollData.swift in Sources */,
+				CC876D4E1C821F1400377ECD /* EndGameViewController.swift in Sources */,
 				CCE80E641C817A2900EAAC89 /* TrumpeJump.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

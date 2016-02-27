@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -38,6 +39,9 @@
                                         <include reference="0vU-qm-mIZ"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plf-UO-drl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baE-9O-noG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -105,17 +109,17 @@
                                 <exclude reference="UcY-qA-wRe"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="ucZ-FA-HAc"/>
+                                <exclude reference="vAE-k0-Fqj"/>
+                                <exclude reference="EMg-fp-NOL"/>
+                                <exclude reference="IB4-Yi-3jQ"/>
                                 <exclude reference="Au9-0b-ejm"/>
                                 <exclude reference="MbL-zd-KH6"/>
                                 <exclude reference="X97-nd-q4X"/>
-                                <exclude reference="9hE-FL-ZF3"/>
-                                <exclude reference="V1Q-L5-c5t"/>
-                                <exclude reference="EMg-fp-NOL"/>
-                                <exclude reference="IB4-Yi-3jQ"/>
                                 <exclude reference="3hw-UY-QfQ"/>
                                 <exclude reference="GrK-oY-MsW"/>
-                                <exclude reference="ucZ-FA-HAc"/>
-                                <exclude reference="vAE-k0-Fqj"/>
+                                <exclude reference="9hE-FL-ZF3"/>
+                                <exclude reference="V1Q-L5-c5t"/>
                                 <exclude reference="DR7-j3-5Lg"/>
                                 <exclude reference="HrN-ho-KxQ"/>
                                 <exclude reference="Kyz-hA-uga"/>
@@ -131,17 +135,17 @@
                                 <include reference="UcY-qA-wRe"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="ucZ-FA-HAc"/>
+                                <include reference="vAE-k0-Fqj"/>
+                                <include reference="EMg-fp-NOL"/>
+                                <include reference="IB4-Yi-3jQ"/>
                                 <include reference="Au9-0b-ejm"/>
                                 <include reference="MbL-zd-KH6"/>
                                 <include reference="X97-nd-q4X"/>
-                                <include reference="9hE-FL-ZF3"/>
-                                <include reference="V1Q-L5-c5t"/>
-                                <include reference="EMg-fp-NOL"/>
-                                <include reference="IB4-Yi-3jQ"/>
                                 <include reference="3hw-UY-QfQ"/>
                                 <include reference="GrK-oY-MsW"/>
-                                <include reference="ucZ-FA-HAc"/>
-                                <include reference="vAE-k0-Fqj"/>
+                                <include reference="9hE-FL-ZF3"/>
+                                <include reference="V1Q-L5-c5t"/>
                                 <include reference="DR7-j3-5Lg"/>
                                 <include reference="HrN-ho-KxQ"/>
                                 <include reference="Kyz-hA-uga"/>

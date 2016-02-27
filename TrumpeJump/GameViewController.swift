@@ -12,6 +12,10 @@ import AVKit
 import AVFoundation
 class GameViewController: UIViewController {
     
+    @IBAction func playButton(sender: AnyObject) {
+        presentViewController(TrumpGameController(), animated: true, completion: nil)
+    }
+    
     var scene : GameScene!
     var audioPlayer: AVAudioPlayer?
     @IBOutlet weak var musicSwitch: UISwitch!

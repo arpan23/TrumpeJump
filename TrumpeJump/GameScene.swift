@@ -10,19 +10,20 @@ import SpriteKit
 
 class GameScene : SKScene {
     
-    var trumpy : Trumpy!
+    var skView : SKView!
     
-    override func didMoveToView(view: SKView) {
-        backgroundColor = UIColor.blueColor()
-        
-        trumpy = Trumpy()
-        trumpy.position = CGPointMake(view.frame.width/2, view.frame.height/2)
-        
-        
+    override init(size: CGSize) {
+        super.init(size: size)
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not beenplemed")
+        fatalError("init(coder:) has not been implemented")
     }
-   
+    
+    override func didMoveToView(view: SKView) {
+        
+        backgroundColor = UIColor.blueColor()
+
+    }
+
 }

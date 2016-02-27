@@ -11,17 +11,24 @@ import SpriteKit
 
 class TrumpGameController: UIViewController {
     
-    var scene : GameScene!
+    var trumpy : Trumpy!
+    
+    override func loadView() {
+        self.view = SKView()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let skView = view as! SKView
+        trumpy = Trumpy()
+        trumpy.position = CGPointMake(view.frame.width/2, view.frame.height/2)
         
-        scene = GameScene(size: skView.bounds.size)
+        let skView = self.view as! SKView
+        
+        let scene = GameScene(size: skView.bounds.size)
         scene.scaleMode = .AspectFill
-        
         skView.presentScene(scene)
+    
     }
     
     override func didReceiveMemoryWarning() {

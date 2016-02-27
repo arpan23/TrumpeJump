@@ -1,6 +1,0 @@
-framework module Pods_TrumpeJump {
-  umbrella header "Pods-TrumpeJump-umbrella.h"
-
-  export *
-  module * { export * }
-}

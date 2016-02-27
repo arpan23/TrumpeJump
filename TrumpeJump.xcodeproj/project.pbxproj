@@ -17,6 +17,7 @@
 		B0DEAF6F1C81D96E00159E06 /* mil_stack.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF671C81D96E00159E06 /* mil_stack.png */; };
 		B0DEAF701C81D96E00159E06 /* TrumpThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */; };
 		B0DEAF721C81DFE200159E06 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEAF711C81DFE200159E06 /* GameScene.swift */; };
+		B0DEAF761C81FA3600159E06 /* trump.sks in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF751C81FA3600159E06 /* trump.sks */; };
 		CCE80E5C1C817A2900EAAC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */; };
 		CCE80E5E1C817A2900EAAC89 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE80E5D1C817A2900EAAC89 /* GameViewController.swift */; };
 		CCE80E611C817A2900EAAC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE80E5F1C817A2900EAAC89 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		B0DEAF671C81D96E00159E06 /* mil_stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mil_stack.png; sourceTree = "<group>"; };
 		B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpThrowView.swift; sourceTree = "<group>"; };
 		B0DEAF711C81DFE200159E06 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B0DEAF751C81FA3600159E06 /* trump.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = trump.sks; sourceTree = "<group>"; };
 		CCE80E581C817A2900EAAC89 /* TrumpeJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpeJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE80E5D1C817A2900EAAC89 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				B0DEAF711C81DFE200159E06 /* GameScene.swift */,
+				B0DEAF751C81FA3600159E06 /* trump.sks */,
 				CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */,
 				CCE80E5D1C817A2900EAAC89 /* GameViewController.swift */,
 				B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */,
@@ -185,6 +188,7 @@
 			files = (
 				B0DEAF6E1C81D96E00159E06 /* middle.png in Resources */,
 				CCE80E691C817A2900EAAC89 /* LaunchScreen.storyboard in Resources */,
+				B0DEAF761C81FA3600159E06 /* trump.sks in Resources */,
 				B0DEAF6A1C81D96E00159E06 /* dt_arm_r.png in Resources */,
 				B0DEAF691C81D96E00159E06 /* dt_arm_l.png in Resources */,
 				CCE80E661C817A2900EAAC89 /* Assets.xcassets in Resources */,

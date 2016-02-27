@@ -13,7 +13,7 @@ class GameScene : SKScene {
     init() {
         super.init(size: size)
         
-        let background = SKSpriteNode(imageNamed: "")
+        let background = SK
         addChild(background)
         
         

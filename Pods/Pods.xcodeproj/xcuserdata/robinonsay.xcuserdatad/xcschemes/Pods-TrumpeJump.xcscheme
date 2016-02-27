@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4D466B92269B6F374797F71E'
+               BlueprintIdentifier = 'D19066A58E945A4E5F4BA845'
                BlueprintName = 'Pods-TrumpeJump'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_TrumpeJump.framework'>

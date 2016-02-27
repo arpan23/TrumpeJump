@@ -14,6 +14,7 @@
 		CCE80E641C817A2900EAAC89 /* TrumpeJump.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCE80E621C817A2900EAAC89 /* TrumpeJump.xcdatamodeld */; };
 		CCE80E661C817A2900EAAC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE80E651C817A2900EAAC89 /* Assets.xcassets */; };
 		CCE80E691C817A2900EAAC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE80E671C817A2900EAAC89 /* LaunchScreen.storyboard */; };
+		CCE85F861C81906700B7DB80 /* PollData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE85F851C81906700B7DB80 /* PollData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		CCE80E651C817A2900EAAC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCE80E681C817A2900EAAC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCE80E6A1C817A2900EAAC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE85F851C81906700B7DB80 /* PollData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollData.swift; sourceTree = "<group>"; };
 		CDC8A73854DF803E691B802F /* Pods_TrumpeJump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrumpeJump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				CCE80E671C817A2900EAAC89 /* LaunchScreen.storyboard */,
 				CCE80E6A1C817A2900EAAC89 /* Info.plist */,
 				CCE80E621C817A2900EAAC89 /* TrumpeJump.xcdatamodeld */,
+				CCE85F851C81906700B7DB80 /* PollData.swift */,
 			);
 			path = TrumpeJump;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				CCE80E5E1C817A2900EAAC89 /* ViewController.swift in Sources */,
 				CCE80E5C1C817A2900EAAC89 /* AppDelegate.swift in Sources */,
+				CCE85F861C81906700B7DB80 /* PollData.swift in Sources */,
 				CCE80E641C817A2900EAAC89 /* TrumpeJump.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

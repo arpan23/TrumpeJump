@@ -9,69 +9,40 @@
 import UIKit
 
 class EndGameViewController: UIViewController, NSXMLParserDelegate {
-
+    var strXMLData:[String] = []
+    var linkXMLData:[NSURL] = []
+    var xmlDict = [String:NSURL]()
+    var currentElement:String = ""
+    var passData:Bool=false
+    var passName:Bool=false
     var parser = NSXMLParser()
-    var posts = NSMutableArray()
-    var elements = NSMutableDictionary()
-    var element = NSString()
-    var title1 = NSMutableString()
-    var date = NSMutableString()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        beginParsing()
-        print("PARSER OUTPUT \(posts)")
+        let url:String="http://feeds.washingtonpost.com/rss/rss_election-2012"
+        let urlToSend: NSURL = NSURL(string: url)!
+        // Parse the XML
+        parser = NSXMLParser(contentsOfURL: urlToSend)!
+        parser.delegate = self
+        
+        let success:Bool = parser.parse()
+        
+        if success {
+            print("parse success!")
+            
+            print(strXMLData)
+            print(linkXMLData)
+//            lblNameData.text=strXMLData
+            
+        } else {
+            print("parse failure!")
+        }
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
-        
-        element = elementName
-        if (elementName as NSString).isEqualToString("item")
-        {
-            elements = NSMutableDictionary()
-            elements = [:]
-            title1 = NSMutableString()
-            title1 = ""
-            date = NSMutableString()
-            date = ""
-        }
-    }
-    
-    func parser(parser: NSXMLParser!, foundCharacters string: String!)
-    {
-        if element.isEqualToString("title") {
-            title1.appendString(string)
-        } else if element.isEqualToString("pubDate") {
-            date.appendString(string)
-        }
-    }
-    
-    func parser(parser: NSXMLParser!, didEndElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!)
-    {
-        if (elementName as NSString).isEqualToString("item") {
-            if !title1.isEqual(nil) {
-                elements.setObject(title1, forKey: "title")
-            }
-            if !date.isEqual(nil) {
-                elements.setObject(date, forKey: "date")
-            }
-            posts.addObject(elements)
-        }
-    }
-    
-    func beginParsing()
-    {
-        posts = []
-        parser = NSXMLParser(contentsOfURL:(NSURL(string:"https://rss.cnn.com/rss/cnn_latest.rss"))!)!
-        parser.delegate = self
-        parser.parse()
-//        tbData!.reloadData()
     }
     /*
     // MARK: - Navigation
@@ -82,5 +53,46 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: - Delegate funcs
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
+        currentElement=elementName;
+        if(elementName=="item" || elementName=="title" || elementName=="link")
+        {
+//            if(elementName=="title"){
+//                passName=true;
+//            }
+//            passData=true;
+            passName = elementName=="title"
+            passData = elementName=="link"
+        }
+    }
+    
+    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        currentElement="";
+        if(elementName=="item" || elementName=="title" || elementName=="link")
+        {
+            if(elementName=="title"){
+                passName=false;
+            }
+            passData=false;
+        }
+    }
+    
+    func parser(parser: NSXMLParser, foundCharacters string: String) {
+        if(passName){
+            strXMLData.append(string)
+        }
+        
+        if(passData)
+        {
+            linkXMLData.append(NSURL(string: string)!)
+//            print(string)
+        }
+    }
+    
+    func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
+        NSLog("failure error: %@", parseError)
+    }
 
 }

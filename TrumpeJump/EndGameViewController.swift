@@ -34,8 +34,10 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
             
             print(strXMLData)
             print(linkXMLData)
-            
-            var str = strXMLData[10]
+            let lower : UInt32 = 0
+            let upper : UInt32 = UInt32(strXMLData.endIndex)
+            let randomNumber = arc4random_uniform(upper - lower) + lower
+            var str = strXMLData[Int(randomNumber)]
             newsBtn.setTitle(str, forState: UIControlState.Normal)
 //            lblNameData.text=strXMLData
             

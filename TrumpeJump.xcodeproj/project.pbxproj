@@ -46,6 +46,7 @@
 		CCE278A91C81FD7900E48759 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		CCE80E581C817A2900EAAC89 /* TrumpeJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpeJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCE80E5D1C817A2900EAAC89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCE80E5D1C817A2900EAAC89 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CCE80E601C817A2900EAAC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCE80E631C817A2900EAAC89 /* TrumpeJump.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrumpeJump.xcdatamodel; sourceTree = "<group>"; };
@@ -173,7 +174,7 @@
 				TargetAttributes = {
 					CCE80E571C817A2900EAAC89 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = CT9L2W6TJL;
+						DevelopmentTeam = 62V2S7E742;
 					};
 				};
 			};
@@ -283,14 +284,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCE80E5F1C817A2900EAAC89 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCE80E601C817A2900EAAC89 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CCE80E671C817A2900EAAC89 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -390,6 +383,7 @@
 			baseConfigurationReference = 28B835DE6AFDFE27EF15B7EC /* Pods-TrumpeJump.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TrumpeJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.trumpejump.TrumpeJump;
@@ -402,6 +396,7 @@
 			baseConfigurationReference = 7346236E22EB8A17A2885811 /* Pods-TrumpeJump.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TrumpeJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.trumpejump.TrumpeJump;

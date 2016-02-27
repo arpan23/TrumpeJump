@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -33,75 +34,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0w-6d-7Db">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Share"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udr-ch-T4u">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="99" id="f7X-wp-0cy"/>
-                                    <constraint firstAttribute="height" constant="30" id="yd3-e2-A3G"/>
-                                </constraints>
-                                <state key="normal" title="Play Again"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="f7X-wp-0cy"/>
-                                        <exclude reference="yd3-e2-A3G"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="f7X-wp-0cy"/>
-                                        <include reference="yd3-e2-A3G"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="goBackHome:" destination="q1b-eD-nRA" eventType="touchUpInside" id="aIq-CG-G2y"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74C-yd-Mxz">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trump.Head.Sprite" translatesAutoresizingMaskIntoConstraints="NO" id="hzn-ee-9sX">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="9iz-jQ-PTd"/>
+                                    <constraint firstAttribute="height" constant="163" id="pWS-j7-n5e"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9iz-jQ-PTd"/>
+                                        <exclude reference="pWS-j7-n5e"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="9iz-jQ-PTd"/>
+                                        <include reference="pWS-j7-n5e"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udr-ch-T4u">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="makeAmerica"/>
+                                <connections>
+                                    <action selector="goBackHome:" destination="q1b-eD-nRA" eventType="touchUpInside" id="aIq-CG-G2y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp5-bh-my6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="share"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="74C-yd-Mxz" firstAttribute="centerY" secondItem="KVz-Qw-qQh" secondAttribute="centerY" id="EWg-ca-SX1"/>
-                            <constraint firstItem="74C-yd-Mxz" firstAttribute="centerX" secondItem="KVz-Qw-qQh" secondAttribute="centerX" id="OKP-P6-FNw"/>
-                            <constraint firstAttribute="bottom" secondItem="Udr-ch-T4u" secondAttribute="bottom" constant="80" id="Ucc-nM-sxz"/>
-                            <constraint firstItem="v0w-6d-7Db" firstAttribute="centerX" secondItem="KVz-Qw-qQh" secondAttribute="centerX" id="hIK-gD-7H8"/>
-                            <constraint firstItem="Udr-ch-T4u" firstAttribute="centerX" secondItem="KVz-Qw-qQh" secondAttribute="centerX" id="mQt-xW-puq"/>
-                            <constraint firstItem="v0w-6d-7Db" firstAttribute="top" secondItem="Udr-ch-T4u" secondAttribute="bottom" constant="8" symbolic="YES" id="rz8-uz-KOs"/>
+                            <constraint firstItem="xp5-bh-my6" firstAttribute="centerX" secondItem="KVz-Qw-qQh" secondAttribute="centerX" id="0aZ-gQ-idK"/>
+                            <constraint firstItem="GY8-fg-j01" firstAttribute="top" secondItem="Udr-ch-T4u" secondAttribute="bottom" constant="-62" id="47b-T9-ejj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xp5-bh-my6" secondAttribute="trailing" constant="143" id="MLh-tU-kRt"/>
+                            <constraint firstItem="hzn-ee-9sX" firstAttribute="centerX" secondItem="KVz-Qw-qQh" secondAttribute="centerX" id="O3F-FO-lG8"/>
+                            <constraint firstItem="Udr-ch-T4u" firstAttribute="leading" secondItem="KVz-Qw-qQh" secondAttribute="leadingMargin" constant="163" id="OGQ-pu-IDW"/>
+                            <constraint firstItem="hzn-ee-9sX" firstAttribute="centerY" secondItem="KVz-Qw-qQh" secondAttribute="centerY" id="ULb-Dy-51K"/>
+                            <constraint firstItem="xp5-bh-my6" firstAttribute="top" secondItem="TuJ-3y-Gsp" secondAttribute="bottom" constant="190" id="Vqe-G6-D2i"/>
+                            <constraint firstItem="74C-yd-Mxz" firstAttribute="top" secondItem="TuJ-3y-Gsp" secondAttribute="bottom" constant="8" id="eSW-gN-zun"/>
+                            <constraint firstItem="Udr-ch-T4u" firstAttribute="top" secondItem="TuJ-3y-Gsp" secondAttribute="bottom" constant="138" id="fpA-25-Bhg"/>
+                            <constraint firstItem="GY8-fg-j01" firstAttribute="top" secondItem="xp5-bh-my6" secondAttribute="bottom" constant="-92" id="hhA-PH-vzA"/>
+                            <constraint firstItem="74C-yd-Mxz" firstAttribute="centerX" secondItem="KVz-Qw-qQh" secondAttribute="centerX" id="lE1-ZY-mnk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Udr-ch-T4u" secondAttribute="trailing" constant="150" id="lg3-NN-FWj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="v0w-6d-7Db"/>
-                                <exclude reference="Udr-ch-T4u"/>
                                 <exclude reference="74C-yd-Mxz"/>
+                                <exclude reference="hzn-ee-9sX"/>
+                                <exclude reference="Udr-ch-T4u"/>
+                                <exclude reference="xp5-bh-my6"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="EWg-ca-SX1"/>
-                                <exclude reference="OKP-P6-FNw"/>
-                                <exclude reference="Ucc-nM-sxz"/>
-                                <exclude reference="mQt-xW-puq"/>
-                                <exclude reference="hIK-gD-7H8"/>
-                                <exclude reference="rz8-uz-KOs"/>
+                                <exclude reference="O3F-FO-lG8"/>
+                                <exclude reference="ULb-Dy-51K"/>
+                                <exclude reference="OGQ-pu-IDW"/>
+                                <exclude reference="fpA-25-Bhg"/>
+                                <exclude reference="lg3-NN-FWj"/>
+                                <exclude reference="eSW-gN-zun"/>
+                                <exclude reference="lE1-ZY-mnk"/>
+                                <exclude reference="0aZ-gQ-idK"/>
+                                <exclude reference="MLh-tU-kRt"/>
+                                <exclude reference="Vqe-G6-D2i"/>
+                                <exclude reference="47b-T9-ejj"/>
+                                <exclude reference="hhA-PH-vzA"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="subviews">
-                                <include reference="v0w-6d-7Db"/>
-                                <include reference="Udr-ch-T4u"/>
                                 <include reference="74C-yd-Mxz"/>
+                                <include reference="hzn-ee-9sX"/>
+                                <include reference="Udr-ch-T4u"/>
+                                <include reference="xp5-bh-my6"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="EWg-ca-SX1"/>
-                                <include reference="OKP-P6-FNw"/>
-                                <include reference="Ucc-nM-sxz"/>
-                                <include reference="mQt-xW-puq"/>
-                                <include reference="hIK-gD-7H8"/>
-                                <include reference="rz8-uz-KOs"/>
+                                <include reference="O3F-FO-lG8"/>
+                                <include reference="ULb-Dy-51K"/>
+                                <include reference="OGQ-pu-IDW"/>
+                                <include reference="fpA-25-Bhg"/>
+                                <include reference="lg3-NN-FWj"/>
+                                <include reference="eSW-gN-zun"/>
+                                <include reference="lE1-ZY-mnk"/>
+                                <include reference="0aZ-gQ-idK"/>
+                                <include reference="MLh-tU-kRt"/>
+                                <include reference="Vqe-G6-D2i"/>
+                                <include reference="47b-T9-ejj"/>
+                                <include reference="hhA-PH-vzA"/>
                             </mask>
                         </variation>
                     </view>
@@ -115,4 +139,9 @@
             <point key="canvasLocation" x="456" y="222"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Trump.Head.Sprite" width="128" height="107"/>
+        <image name="makeAmerica" width="360" height="360"/>
+        <image name="share" width="360" height="360"/>
+    </resources>
 </document>

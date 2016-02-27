@@ -24,21 +24,18 @@
         <!--End Game View Controller-->
         <scene sceneID="pEI-bc-agd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V6G-v8-vRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="q1b-eD-nRA" customClass="EndGameViewController" customModule="TrumpeJump" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TuJ-3y-Gsp"/>
                         <viewControllerLayoutGuide type="bottom" id="GY8-fg-j01"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KVz-Qw-qQh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0w-6d-7Db">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Share"/>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="277" y="328" width="46" height="30"/>
-                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udr-ch-T4u">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -113,6 +110,7 @@
                         <outlet property="newsBtn" destination="74C-yd-Mxz" id="Eau-zd-tSa"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6G-v8-vRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="456" y="222"/>
         </scene>

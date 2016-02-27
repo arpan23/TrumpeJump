@@ -8,8 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		273A2EA63E8838DDA43928EA /* Pods_TrumpeJump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC8A73854DF803E691B802F /* Pods_TrumpeJump.framework */; };
+		B0DEAF691C81D96E00159E06 /* dt_arm_l.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF611C81D96E00159E06 /* dt_arm_l.png */; };
+		B0DEAF6A1C81D96E00159E06 /* dt_arm_r.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF621C81D96E00159E06 /* dt_arm_r.png */; };
+		B0DEAF6B1C81D96E00159E06 /* dt_head.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF631C81D96E00159E06 /* dt_head.png */; };
+		B0DEAF6C1C81D96E00159E06 /* dt_legs.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF641C81D96E00159E06 /* dt_legs.png */; };
+		B0DEAF6D1C81D96E00159E06 /* dt_torso.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF651C81D96E00159E06 /* dt_torso.png */; };
+		B0DEAF6E1C81D96E00159E06 /* middle.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF661C81D96E00159E06 /* middle.png */; };
+		B0DEAF6F1C81D96E00159E06 /* mil_stack.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DEAF671C81D96E00159E06 /* mil_stack.png */; };
+		B0DEAF701C81D96E00159E06 /* TrumpThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */; };
+		B0DEAF721C81DFE200159E06 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEAF711C81DFE200159E06 /* GameScene.swift */; };
+		CCE278AA1C81FD7900E48759 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCE278A91C81FD7900E48759 /* song.mp3 */; };
 		CCE80E5C1C817A2900EAAC89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */; };
+<<<<<<< HEAD
 		CCE80E5E1C817A2900EAAC89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE80E5D1C817A2900EAAC89 /* ViewController.swift */; };
+=======
+		CCE80E5E1C817A2900EAAC89 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE80E5D1C817A2900EAAC89 /* GameViewController.swift */; };
+		CCE80E611C817A2900EAAC89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE80E5F1C817A2900EAAC89 /* Main.storyboard */; };
+>>>>>>> 87b5d237231aeb4809fdf058742967033549dc57
 		CCE80E641C817A2900EAAC89 /* TrumpeJump.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCE80E621C817A2900EAAC89 /* TrumpeJump.xcdatamodeld */; };
 		CCE80E661C817A2900EAAC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE80E651C817A2900EAAC89 /* Assets.xcassets */; };
 		CCE80E691C817A2900EAAC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE80E671C817A2900EAAC89 /* LaunchScreen.storyboard */; };
@@ -19,9 +34,24 @@
 /* Begin PBXFileReference section */
 		28B835DE6AFDFE27EF15B7EC /* Pods-TrumpeJump.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrumpeJump.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrumpeJump/Pods-TrumpeJump.debug.xcconfig"; sourceTree = "<group>"; };
 		7346236E22EB8A17A2885811 /* Pods-TrumpeJump.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrumpeJump.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrumpeJump/Pods-TrumpeJump.release.xcconfig"; sourceTree = "<group>"; };
+		B0DEAF611C81D96E00159E06 /* dt_arm_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dt_arm_l.png; sourceTree = "<group>"; };
+		B0DEAF621C81D96E00159E06 /* dt_arm_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dt_arm_r.png; sourceTree = "<group>"; };
+		B0DEAF631C81D96E00159E06 /* dt_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dt_head.png; sourceTree = "<group>"; };
+		B0DEAF641C81D96E00159E06 /* dt_legs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dt_legs.png; sourceTree = "<group>"; };
+		B0DEAF651C81D96E00159E06 /* dt_torso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dt_torso.png; sourceTree = "<group>"; };
+		B0DEAF661C81D96E00159E06 /* middle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = middle.png; sourceTree = "<group>"; };
+		B0DEAF671C81D96E00159E06 /* mil_stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mil_stack.png; sourceTree = "<group>"; };
+		B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpThrowView.swift; sourceTree = "<group>"; };
+		B0DEAF711C81DFE200159E06 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CCE278A91C81FD7900E48759 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		CCE80E581C817A2900EAAC89 /* TrumpeJump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrumpeJump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CCE80E5D1C817A2900EAAC89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+=======
+		CCE80E5D1C817A2900EAAC89 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CCE80E601C817A2900EAAC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+>>>>>>> 87b5d237231aeb4809fdf058742967033549dc57
 		CCE80E631C817A2900EAAC89 /* TrumpeJump.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrumpeJump.xcdatamodel; sourceTree = "<group>"; };
 		CCE80E651C817A2900EAAC89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCE80E681C817A2900EAAC89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,8 +110,23 @@
 		CCE80E5A1C817A2900EAAC89 /* TrumpeJump */ = {
 			isa = PBXGroup;
 			children = (
+				CCE278A91C81FD7900E48759 /* song.mp3 */,
+				B0DEAF711C81DFE200159E06 /* GameScene.swift */,
 				CCE80E5B1C817A2900EAAC89 /* AppDelegate.swift */,
+<<<<<<< HEAD
 				CCE80E5D1C817A2900EAAC89 /* ViewController.swift */,
+=======
+				CCE80E5D1C817A2900EAAC89 /* GameViewController.swift */,
+				B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */,
+				CCE80E5F1C817A2900EAAC89 /* Main.storyboard */,
+				B0DEAF611C81D96E00159E06 /* dt_arm_l.png */,
+				B0DEAF621C81D96E00159E06 /* dt_arm_r.png */,
+				B0DEAF631C81D96E00159E06 /* dt_head.png */,
+				B0DEAF641C81D96E00159E06 /* dt_legs.png */,
+				B0DEAF651C81D96E00159E06 /* dt_torso.png */,
+				B0DEAF661C81D96E00159E06 /* middle.png */,
+				B0DEAF671C81D96E00159E06 /* mil_stack.png */,
+>>>>>>> 87b5d237231aeb4809fdf058742967033549dc57
 				CCE80E651C817A2900EAAC89 /* Assets.xcassets */,
 				CCE80E671C817A2900EAAC89 /* LaunchScreen.storyboard */,
 				CCE80E6A1C817A2900EAAC89 /* Info.plist */,
@@ -153,8 +198,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DEAF6E1C81D96E00159E06 /* middle.png in Resources */,
 				CCE80E691C817A2900EAAC89 /* LaunchScreen.storyboard in Resources */,
+				B0DEAF6A1C81D96E00159E06 /* dt_arm_r.png in Resources */,
+				B0DEAF691C81D96E00159E06 /* dt_arm_l.png in Resources */,
 				CCE80E661C817A2900EAAC89 /* Assets.xcassets in Resources */,
+<<<<<<< HEAD
+=======
+				B0DEAF6F1C81D96E00159E06 /* mil_stack.png in Resources */,
+				CCE278AA1C81FD7900E48759 /* song.mp3 in Resources */,
+				B0DEAF6C1C81D96E00159E06 /* dt_legs.png in Resources */,
+				B0DEAF6D1C81D96E00159E06 /* dt_torso.png in Resources */,
+				CCE80E611C817A2900EAAC89 /* Main.storyboard in Resources */,
+				B0DEAF6B1C81D96E00159E06 /* dt_head.png in Resources */,
+>>>>>>> 87b5d237231aeb4809fdf058742967033549dc57
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCE80E5E1C817A2900EAAC89 /* ViewController.swift in Sources */,
+				B0DEAF721C81DFE200159E06 /* GameScene.swift in Sources */,
+				B0DEAF701C81D96E00159E06 /* TrumpThrowView.swift in Sources */,
+				CCE80E5E1C817A2900EAAC89 /* GameViewController.swift in Sources */,
 				CCE80E5C1C817A2900EAAC89 /* AppDelegate.swift in Sources */,
 				CCE85F861C81906700B7DB80 /* PollData.swift in Sources */,
 				CCE80E641C817A2900EAAC89 /* TrumpeJump.xcdatamodeld in Sources */,

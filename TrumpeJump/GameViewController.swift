@@ -8,29 +8,46 @@
 
 import UIKit
 import SpriteKit
-
+import AVKit
+import AVFoundation
 class GameViewController: UIViewController {
     
     var scene : GameScene!
-
+    var audioPlayer: AVAudioPlayer?
+    @IBOutlet weak var musicSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD:TrumpeJump/ViewController.swift
-    
-        // Do any additional setup after loading the view, typically from a nib.
-=======
+        if let path = NSBundle.mainBundle().pathForResource("song", ofType: "mp3") {
+            do{
+            try audioPlayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path), fileTypeHint: "mp3")
+            }catch{
+                
+            }
+            if let sound = audioPlayer {
+                
+                sound.prepareToPlay()
+                
+                sound.play()
+            }
+        }
         
         
-        
->>>>>>> ea54503a879922f4fe2f3fc51884377ebc5fe880:TrumpeJump/GameViewController.swift
     }
 
+    @IBAction func turnMusicOff(sender: AnyObject) {
+        if(!musicSwitch.on){
+            audioPlayer?.stop()
+        }else{
+            audioPlayer?.play()
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    override func shouldAutoRotate() -> Bool {
+    func shouldAutoRotate() -> Bool {
         return false
     }
     

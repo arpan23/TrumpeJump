@@ -10,8 +10,8 @@ import SpriteKit
 
 class GameScene : SKScene {
     
-    init() {
-        super.init(size: size)
+    override init() {
+        super.init(/*size: size*/)
         
         let background = SKSpriteNode(imageNamed: "")
         addChild(background)
@@ -19,9 +19,13 @@ class GameScene : SKScene {
         
     }
 
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not beenplemed")
+    }
+
     override func didMoveToView(view: SKView) {
         
-        anchorPoint = CGPointMake(x: 0.5, y: 0.5)
+        anchorPoint = CGPointMake(0.5, 0.5)
         
         
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -112,6 +112,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efR-IQ-nMD">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="turnMusicOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="mTI-uy-Lkf"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lP-Sv-gAP">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -153,18 +156,11 @@
                                 <exclude reference="3lP-Sv-gAP"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="6bo-in-6wR"/>
-                                <exclude reference="zXl-hg-yH4"/>
-                                <exclude reference="WjK-BY-CT5"/>
-                                <exclude reference="si7-St-OSk"/>
                                 <exclude reference="8iV-0Y-Kq1"/>
                                 <exclude reference="MJe-he-LoL"/>
                                 <exclude reference="oYp-Tw-Rg9"/>
-                                <exclude reference="Lhm-uL-7Cf"/>
-                                <exclude reference="bPP-wF-SV3"/>
-                                <exclude reference="FZG-xG-eUu"/>
-                                <exclude reference="ec3-gP-h7r"/>
-                                <exclude reference="wfO-8d-GDT"/>
+                                <exclude reference="WjK-BY-CT5"/>
+                                <exclude reference="si7-St-OSk"/>
                                 <exclude reference="0hh-hl-mHN"/>
                                 <exclude reference="EPQ-rm-OKP"/>
                                 <exclude reference="TIh-Iy-1mH"/>
@@ -172,6 +168,13 @@
                                 <exclude reference="Bv0-Xz-ymB"/>
                                 <exclude reference="FT2-P2-FxD"/>
                                 <exclude reference="rA6-4k-s5L"/>
+                                <exclude reference="FZG-xG-eUu"/>
+                                <exclude reference="ec3-gP-h7r"/>
+                                <exclude reference="wfO-8d-GDT"/>
+                                <exclude reference="6bo-in-6wR"/>
+                                <exclude reference="zXl-hg-yH4"/>
+                                <exclude reference="Lhm-uL-7Cf"/>
+                                <exclude reference="bPP-wF-SV3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -185,18 +188,11 @@
                                 <include reference="3lP-Sv-gAP"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="6bo-in-6wR"/>
-                                <include reference="zXl-hg-yH4"/>
-                                <include reference="WjK-BY-CT5"/>
-                                <include reference="si7-St-OSk"/>
                                 <include reference="8iV-0Y-Kq1"/>
                                 <include reference="MJe-he-LoL"/>
                                 <include reference="oYp-Tw-Rg9"/>
-                                <include reference="Lhm-uL-7Cf"/>
-                                <include reference="bPP-wF-SV3"/>
-                                <include reference="FZG-xG-eUu"/>
-                                <include reference="ec3-gP-h7r"/>
-                                <include reference="wfO-8d-GDT"/>
+                                <include reference="WjK-BY-CT5"/>
+                                <include reference="si7-St-OSk"/>
                                 <include reference="0hh-hl-mHN"/>
                                 <include reference="EPQ-rm-OKP"/>
                                 <include reference="TIh-Iy-1mH"/>
@@ -204,9 +200,19 @@
                                 <include reference="Bv0-Xz-ymB"/>
                                 <include reference="FT2-P2-FxD"/>
                                 <include reference="rA6-4k-s5L"/>
+                                <include reference="FZG-xG-eUu"/>
+                                <include reference="ec3-gP-h7r"/>
+                                <include reference="wfO-8d-GDT"/>
+                                <include reference="6bo-in-6wR"/>
+                                <include reference="zXl-hg-yH4"/>
+                                <include reference="Lhm-uL-7Cf"/>
+                                <include reference="bPP-wF-SV3"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="musicSwitch" destination="efR-IQ-nMD" id="pyJ-2G-a1j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

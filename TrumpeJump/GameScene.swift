@@ -10,25 +10,20 @@ import SpriteKit
 
 class GameScene : SKScene {
     
-    override init() {
-        super.init(/*size: size*/)
-        
-        let background = SKSpriteNode(imageNamed: "")
-        addChild(background)
-        
-        
+    var skView : SKView!
+    
+    override init(size: CGSize) {
+        super.init(size: size)
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not beenplemed")
+        fatalError("init(coder:) has not been implemented")
     }
-
+    
     override func didMoveToView(view: SKView) {
         
-        anchorPoint = CGPointMake(0.5, 0.5)
-        
-        
+        backgroundColor = UIColor.blueColor()
+
     }
-    
-    
+
 }

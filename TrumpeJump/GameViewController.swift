@@ -18,6 +18,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         if let path = NSBundle.mainBundle().pathForResource("song", ofType: "mp3") {
             do{
             try audioPlayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path), fileTypeHint: "mp3")
@@ -41,6 +42,11 @@ class GameViewController: UIViewController {
         }else{
             audioPlayer?.play()
         }
+        let storyboard = UIStoryboard(name: "endGame", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+        
+        self.presentViewController(controller, animated: true, completion: nil)
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

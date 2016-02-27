@@ -17,6 +17,8 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
     var passName:Bool=false
     var parser = NSXMLParser()
     
+    @IBOutlet weak var newsBtn: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let url:String="http://feeds.washingtonpost.com/rss/rss_election-2012"
@@ -32,6 +34,11 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
             
             print(strXMLData)
             print(linkXMLData)
+            let lower : UInt32 = 0
+            let upper : UInt32 = UInt32(strXMLData.endIndex)
+            let randomNumber = arc4random_uniform(upper - lower) + lower
+            var str = strXMLData[Int(randomNumber)]
+            newsBtn.setTitle(str, forState: UIControlState.Normal)
 //            lblNameData.text=strXMLData
             
         } else {
@@ -53,6 +60,13 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func goBackHome(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateInitialViewController()!
+        
+        self.presentViewController(controller, animated: true, completion: nil)
+
+    }
     
     //MARK: - Delegate funcs
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {

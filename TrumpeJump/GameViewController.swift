@@ -46,6 +46,7 @@ class GameViewController: UIViewController {
         let controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
         
         self.presentViewController(controller, animated: true, completion: nil)
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -22,7 +22,8 @@ class GameScene : SKScene {
     
     override func didMoveToView(view: SKView) {
         
-        backgroundColor = UIColor.blueColor()
+//        backgroundColor = UIColor(colorLiteralRed: 73, green: 181, blue: 229)
+        backgroundColor = UIColor(red: 73/255, green: 181/255, blue: 229/255, alpha: 1.0)
 
     }
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class EndGameViewController: UIViewController, NSXMLParserDelegate {
     var strXMLData:[String] = []
@@ -17,10 +18,16 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
     var passName:Bool=false
     var parser = NSXMLParser()
     
-    @IBOutlet weak var newsBtn: UIButton!
+    var clouds : SCCloudGenerator!
+    
+//    @IBOutlet weak var newsBtn: UIButton!
+    @IBOutlet weak var newsLabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let url:String="http://feeds.washingtonpost.com/rss/rss_election-2012"
         let urlToSend: NSURL = NSURL(string: url)!
         // Parse the XML
@@ -37,14 +44,25 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
             let lower : UInt32 = 0
             let upper : UInt32 = UInt32(strXMLData.endIndex)
             let randomNumber = arc4random_uniform(upper - lower) + lower
-            var str = strXMLData[Int(randomNumber)]
-            newsBtn.setTitle(str, forState: UIControlState.Normal)
+            let str = strXMLData[Int(randomNumber)]
+//            print("STRING \(str)")
+            newsLabel.text = str
 //            lblNameData.text=strXMLData
             
         } else {
             print("parse failure!")
         }
         // Do any additional setup after loading the view.
+        clouds = SCCloudGenerator()
+        let skView = self.view as! SKView
+        clouds.position = CGPointMake(view.frame.width/2, view.frame.height/2)
+        /* Sprite Kit applies additional optimizations to improve rendering performance */
+        skView.ignoresSiblingOrder = true
+        /* Set the scale mode to scale to fit the window */
+        let scene = GameScene(size: skView.bounds.size)
+        scene.scaleMode = .AspectFill
+
+        skView.presentScene(scene)
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,6 +78,15 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func displayShareSheet(shareContent:String) {
+        let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: {})
+    }
+    
+    @IBAction func share(sender: AnyObject) {
+        displayShareSheet("Hello World, from SpartaHack 2016!")
+    }
     @IBAction func goBackHome(sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateInitialViewController()!

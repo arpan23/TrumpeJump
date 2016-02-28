@@ -12,6 +12,10 @@ import AVKit
 import AVFoundation
 class GameViewController: UIViewController {
     
+    @IBAction func playButton(sender: AnyObject) {
+        presentViewController(TrumpGameController(), animated: true, completion: nil)
+    }
+    
     var scene : GameScene!
     var audioPlayer: AVAudioPlayer?
     @IBOutlet weak var musicSwitch: UIButton!
@@ -35,8 +39,6 @@ class GameViewController: UIViewController {
                 sound.play()
             }
         }
-        
-        
     }
     
     
@@ -57,6 +59,13 @@ class GameViewController: UIViewController {
         longTouch = !longTouch;
     }
 
+//    @IBAction func switchThing(sender: AnyObject) {
+//        audioPlayer?.stop()
+//        let storyboard = UIStoryboard(name: "endGame", bundle: nil)
+//        let controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+//        
+//        self.presentViewController(controller, animated: true, completion: nil)
+//    }
     @IBAction func turnMusicOff(sender: AnyObject) {
         
         var image: UIImage?;

@@ -44,6 +44,9 @@
                                         <include reference="NrN-IL-kDE"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plf-UO-drl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7N-As-2t1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>

@@ -21,6 +21,8 @@
 		B0DEAF701C81D96E00159E06 /* TrumpThrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */; };
 		B0DEAF721C81DFE200159E06 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DEAF711C81DFE200159E06 /* GameScene.swift */; };
 		CC52A7BC1C823D2500C305DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC52A7BA1C823D2500C305DF /* Main.storyboard */; };
+		CC5BE8A71C828653000F94CE /* SCCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BE8A51C828653000F94CE /* SCCloud.swift */; };
+		CC5BE8A81C828653000F94CE /* SCCloudGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BE8A61C828653000F94CE /* SCCloudGenerator.swift */; };
 		CC876D4C1C821EF500377ECD /* endGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC876D4B1C821EF500377ECD /* endGame.storyboard */; };
 		CC876D4E1C821F1400377ECD /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC876D4D1C821F1400377ECD /* EndGameViewController.swift */; };
 		CCE278AA1C81FD7900E48759 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CCE278A91C81FD7900E48759 /* song.mp3 */; };
@@ -49,6 +51,8 @@
 		B0DEAF681C81D96E00159E06 /* TrumpThrowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpThrowView.swift; sourceTree = "<group>"; };
 		B0DEAF711C81DFE200159E06 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CC52A7BB1C823D2500C305DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC5BE8A51C828653000F94CE /* SCCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCCloud.swift; path = ../SCCloud.swift; sourceTree = "<group>"; };
+		CC5BE8A61C828653000F94CE /* SCCloudGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCCloudGenerator.swift; path = ../SCCloudGenerator.swift; sourceTree = "<group>"; };
 		CC876D4B1C821EF500377ECD /* endGame.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = endGame.storyboard; sourceTree = "<group>"; };
 		CC876D4D1C821F1400377ECD /* EndGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		CCE278A91C81FD7900E48759 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 		CCE80E5A1C817A2900EAAC89 /* TrumpeJump */ = {
 			isa = PBXGroup;
 			children = (
+				CC5BE8A51C828653000F94CE /* SCCloud.swift */,
+				CC5BE8A61C828653000F94CE /* SCCloudGenerator.swift */,
 				CC52A7BA1C823D2500C305DF /* Main.storyboard */,
 				CC876D4A1C821ECF00377ECD /* endGame */,
 				CCE278A91C81FD7900E48759 /* song.mp3 */,
@@ -291,6 +297,8 @@
 				CCE85F861C81906700B7DB80 /* PollData.swift in Sources */,
 				CC876D4E1C821F1400377ECD /* EndGameViewController.swift in Sources */,
 				CCE80E641C817A2900EAAC89 /* TrumpeJump.xcdatamodeld in Sources */,
+				CC5BE8A71C828653000F94CE /* SCCloud.swift in Sources */,
+				CC5BE8A81C828653000F94CE /* SCCloudGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

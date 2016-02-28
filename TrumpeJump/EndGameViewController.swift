@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class EndGameViewController: UIViewController, NSXMLParserDelegate {
     var strXMLData:[String] = []
@@ -17,11 +18,16 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
     var passName:Bool=false
     var parser = NSXMLParser()
     
+    var clouds : SCCloudGenerator!
+    
 //    @IBOutlet weak var newsBtn: UIButton!
     @IBOutlet weak var newsLabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let url:String="http://feeds.washingtonpost.com/rss/rss_election-2012"
         let urlToSend: NSURL = NSURL(string: url)!
         // Parse the XML
@@ -38,7 +44,8 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
             let lower : UInt32 = 0
             let upper : UInt32 = UInt32(strXMLData.endIndex)
             let randomNumber = arc4random_uniform(upper - lower) + lower
-            var str = strXMLData[Int(randomNumber)]
+            let str = strXMLData[Int(randomNumber)]
+//            print("STRING \(str)")
             newsLabel.text = str
 //            lblNameData.text=strXMLData
             
@@ -46,6 +53,16 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
             print("parse failure!")
         }
         // Do any additional setup after loading the view.
+        clouds = SCCloudGenerator()
+        let skView = self.view as! SKView
+        clouds.position = CGPointMake(view.frame.width/2, view.frame.height/2)
+        /* Sprite Kit applies additional optimizations to improve rendering performance */
+        skView.ignoresSiblingOrder = true
+        /* Set the scale mode to scale to fit the window */
+        let scene = GameScene(size: skView.bounds.size)
+        scene.scaleMode = .AspectFill
+
+        skView.presentScene(scene)
     }
 
     override func didReceiveMemoryWarning() {

@@ -28,6 +28,7 @@
 		CCE80E661C817A2900EAAC89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE80E651C817A2900EAAC89 /* Assets.xcassets */; };
 		CCE80E691C817A2900EAAC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE80E671C817A2900EAAC89 /* LaunchScreen.storyboard */; };
 		CCE85F861C81906700B7DB80 /* PollData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE85F851C81906700B7DB80 /* PollData.swift */; };
+		EE0223231C82C3EE00AF60C6 /* Freedom.Theme.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223221C82C3EE00AF60C6 /* Freedom.Theme.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		CCE80E6A1C817A2900EAAC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCE85F851C81906700B7DB80 /* PollData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollData.swift; sourceTree = "<group>"; };
 		CDC8A73854DF803E691B802F /* Pods_TrumpeJump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrumpeJump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0223221C82C3EE00AF60C6 /* Freedom.Theme.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Freedom.Theme.wav; path = "Assets.xcassets/sounds-1/Freedom.Theme.dataset/Freedom.Theme.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		CCE80E5A1C817A2900EAAC89 /* TrumpeJump */ = {
 			isa = PBXGroup;
 			children = (
+				EE0223221C82C3EE00AF60C6 /* Freedom.Theme.wav */,
 				CC52A7BA1C823D2500C305DF /* Main.storyboard */,
 				CC876D4A1C821ECF00377ECD /* endGame */,
 				CCE278A91C81FD7900E48759 /* song.mp3 */,
@@ -207,6 +210,7 @@
 				B0DEAF691C81D96E00159E06 /* dt_arm_l.png in Resources */,
 				CCE80E661C817A2900EAAC89 /* Assets.xcassets in Resources */,
 				CC876D4C1C821EF500377ECD /* endGame.storyboard in Resources */,
+				EE0223231C82C3EE00AF60C6 /* Freedom.Theme.wav in Resources */,
 				B0DEAF6F1C81D96E00159E06 /* mil_stack.png in Resources */,
 				CC52A7BC1C823D2500C305DF /* Main.storyboard in Resources */,
 				CCE278AA1C81FD7900E48759 /* song.mp3 in Resources */,
@@ -393,10 +397,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TrumpeJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.trumpejump.TrumpeJump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -406,10 +412,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TrumpeJump/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.trumpejump.TrumpeJump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

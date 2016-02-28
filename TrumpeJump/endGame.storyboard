@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -161,20 +162,20 @@
                                 <exclude reference="Udr-ch-T4u"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="28O-VW-cbR"/>
+                                <exclude reference="1mw-Dd-tbX"/>
+                                <exclude reference="pna-nj-4rl"/>
+                                <exclude reference="qVg-6h-AGU"/>
+                                <exclude reference="Sjr-6s-cZH"/>
+                                <exclude reference="bgF-3v-4a9"/>
                                 <exclude reference="5LM-J2-otG"/>
                                 <exclude reference="gpk-43-8t3"/>
                                 <exclude reference="n4c-je-Hf2"/>
                                 <exclude reference="yT1-yY-VC9"/>
-                                <exclude reference="mf3-Xh-hPJ"/>
                                 <exclude reference="XUL-3W-aWZ"/>
                                 <exclude reference="b7t-4b-ejI"/>
                                 <exclude reference="vOm-8J-xei"/>
-                                <exclude reference="1mw-Dd-tbX"/>
-                                <exclude reference="pna-nj-4rl"/>
-                                <exclude reference="qVg-6h-AGU"/>
-                                <exclude reference="28O-VW-cbR"/>
-                                <exclude reference="Sjr-6s-cZH"/>
-                                <exclude reference="bgF-3v-4a9"/>
+                                <exclude reference="mf3-Xh-hPJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -186,20 +187,20 @@
                                 <include reference="Udr-ch-T4u"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="28O-VW-cbR"/>
+                                <include reference="1mw-Dd-tbX"/>
+                                <include reference="pna-nj-4rl"/>
+                                <include reference="qVg-6h-AGU"/>
+                                <include reference="Sjr-6s-cZH"/>
+                                <include reference="bgF-3v-4a9"/>
                                 <include reference="5LM-J2-otG"/>
                                 <include reference="gpk-43-8t3"/>
                                 <include reference="n4c-je-Hf2"/>
                                 <include reference="yT1-yY-VC9"/>
-                                <include reference="mf3-Xh-hPJ"/>
                                 <include reference="XUL-3W-aWZ"/>
                                 <include reference="b7t-4b-ejI"/>
                                 <include reference="vOm-8J-xei"/>
-                                <include reference="1mw-Dd-tbX"/>
-                                <include reference="pna-nj-4rl"/>
-                                <include reference="qVg-6h-AGU"/>
-                                <include reference="28O-VW-cbR"/>
-                                <include reference="Sjr-6s-cZH"/>
-                                <include reference="bgF-3v-4a9"/>
+                                <include reference="mf3-Xh-hPJ"/>
                             </mask>
                         </variation>
                     </view>

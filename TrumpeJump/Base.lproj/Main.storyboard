@@ -86,6 +86,9 @@
                                         <include reference="1jh-HV-t4U"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="ZbJ-B9-mG2" kind="presentation" id="qE7-DM-2KO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baE-9O-noG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -281,6 +284,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="597" y="-301.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xzK-6a-BU4">
+            <objects>
+                <viewController id="ZbJ-B9-mG2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lVW-MJ-tPO"/>
+                        <viewControllerLayoutGuide type="bottom" id="253-TI-zot"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OlR-XF-edm">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NqT-EP-7xm">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="110"/>
+                                <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="300" y="0.0" width="200" height="110"/>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NqT-EP-7xm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="NqT-EP-7xm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwb-ek-HUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262.25" y="-301.5"/>
         </scene>
     </scenes>
     <resources>

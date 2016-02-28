@@ -38,16 +38,19 @@ class GameViewController: UIViewController {
         }
     }
 
+//    @IBAction func switchThing(sender: AnyObject) {
+//        let storyboard = UIStoryboard(name: "endGame", bundle: nil)
+//        let controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+//        
+//        self.presentViewController(controller, animated: true, completion: nil)
+//    }
     @IBAction func turnMusicOff(sender: AnyObject) {
         if(!musicSwitch.on){
             audioPlayer?.stop()
         }else{
             audioPlayer?.play()
         }
-        let storyboard = UIStoryboard(name: "endGame", bundle: nil)
-        let controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
         
-        self.presentViewController(controller, animated: true, completion: nil)
 
     }
     override func didReceiveMemoryWarning() {

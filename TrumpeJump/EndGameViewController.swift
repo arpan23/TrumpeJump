@@ -17,7 +17,8 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
     var passName:Bool=false
     var parser = NSXMLParser()
     
-    @IBOutlet weak var newsBtn: UIButton!
+//    @IBOutlet weak var newsBtn: UIButton!
+    @IBOutlet weak var newsLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,7 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
             let upper : UInt32 = UInt32(strXMLData.endIndex)
             let randomNumber = arc4random_uniform(upper - lower) + lower
             var str = strXMLData[Int(randomNumber)]
-            newsBtn.setTitle(str, forState: UIControlState.Normal)
+            newsLabel.text = str
 //            lblNameData.text=strXMLData
             
         } else {
@@ -60,6 +61,15 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func displayShareSheet(shareContent:String) {
+        let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: {})
+    }
+    
+    @IBAction func share(sender: AnyObject) {
+        displayShareSheet("Hello World, from SpartaHack 2016!")
+    }
     @IBAction func goBackHome(sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateInitialViewController()!

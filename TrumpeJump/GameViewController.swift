@@ -14,8 +14,10 @@ class GameViewController: UIViewController {
     
     var scene : GameScene!
     var audioPlayer: AVAudioPlayer?
-    @IBOutlet weak var musicSwitch: UISwitch!
+    @IBOutlet weak var musicSwitch: UIButton!
+    var musicOff = false;
     
+    @IBOutlet weak var musicButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,16 +39,25 @@ class GameViewController: UIViewController {
     }
 
     @IBAction func turnMusicOff(sender: AnyObject) {
-        if(!musicSwitch.on){
-            audioPlayer?.stop()
-        }else{
-            audioPlayer?.play()
-        }
-        let storyboard = UIStoryboard(name: "endGame", bundle: nil)
-        let controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
         
-        self.presentViewController(controller, animated: true, completion: nil)
-
+        var image: UIImage?;
+        
+        if (!musicOff){ // music is on
+            audioPlayer!.stop()
+            image = UIImage(named: "music-2")
+            
+        }
+        else{
+            image = UIImage(named: "music")
+            
+            audioPlayer!.play()
+            
+        }
+        sender.setImage(image, forState: .Normal)
+        
+        musicOff = !musicOff;
+        
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -34,6 +34,22 @@
 		CCE80E691C817A2900EAAC89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE80E671C817A2900EAAC89 /* LaunchScreen.storyboard */; };
 		CCE85F861C81906700B7DB80 /* PollData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE85F851C81906700B7DB80 /* PollData.swift */; };
 		EE0223231C82C3EE00AF60C6 /* Freedom.Theme.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223221C82C3EE00AF60C6 /* Freedom.Theme.wav */; };
+		EE0223271C82E29E00AF60C6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0223261C82E29E00AF60C6 /* Launch Screen.storyboard */; };
+		EE0223381C82F04D00AF60C6 /* and.some.i.assume.are.good.people.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223281C82F04D00AF60C6 /* and.some.i.assume.are.good.people.wav */; };
+		EE0223391C82F04D00AF60C6 /* I.could.shoot.somebody.and.not.lose.voters.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223291C82F04D00AF60C6 /* I.could.shoot.somebody.and.not.lose.voters.wav */; };
+		EE02233A1C82F04D00AF60C6 /* I.don.t.wear.a.tupay.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE02232A1C82F04D00AF60C6 /* I.don.t.wear.a.tupay.wav */; };
+		EE02233B1C82F04D00AF60C6 /* i.just.want.them.to.suffer.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE02232B1C82F04D00AF60C6 /* i.just.want.them.to.suffer.wav */; };
+		EE02233C1C82F04D00AF60C6 /* so.probably.i.ll.sue.her.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE02232C1C82F04D00AF60C6 /* so.probably.i.ll.sue.her.wav */; };
+		EE02233D1C82F04D00AF60C6 /* sounds.txt in Resources */ = {isa = PBXBuildFile; fileRef = EE02232D1C82F04D00AF60C6 /* sounds.txt */; };
+		EE02233E1C82F04D00AF60C6 /* the.american.dream.is.dead.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE02232E1C82F04D00AF60C6 /* the.american.dream.is.dead.wav */; };
+		EE02233F1C82F04D00AF60C6 /* They.have.to.go.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE02232F1C82F04D00AF60C6 /* They.have.to.go.wav */; };
+		EE0223401C82F04D00AF60C6 /* They.re.very.dishonest.people.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223301C82F04D00AF60C6 /* They.re.very.dishonest.people.wav */; };
+		EE0223411C82F04D00AF60C6 /* Trump.The.Wall.Just.Got.Ten.Feet.Higher.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223311C82F04D00AF60C6 /* Trump.The.Wall.Just.Got.Ten.Feet.Higher.wav */; };
+		EE0223421C82F04D00AF60C6 /* We.Have.Losers.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223321C82F04D00AF60C6 /* We.Have.Losers.wav */; };
+		EE0223431C82F04D00AF60C6 /* you.fired.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223331C82F04D00AF60C6 /* you.fired.wav */; };
+		EE0223441C82F04D00AF60C6 /* you.want.some-.you.want.some-.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223341C82F04D00AF60C6 /* you.want.some-.you.want.some-.wav */; };
+		EE0223451C82F04D00AF60C6 /* All.Talk.No.Action.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223351C82F04D00AF60C6 /* All.Talk.No.Action.wav */; };
+		EE0223461C82F04D00AF60C6 /* Donald.Trump.Says._China_.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE0223361C82F04D00AF60C6 /* Donald.Trump.Says._China_.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +83,22 @@
 		CCE85F851C81906700B7DB80 /* PollData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollData.swift; sourceTree = "<group>"; };
 		CDC8A73854DF803E691B802F /* Pods_TrumpeJump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrumpeJump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0223221C82C3EE00AF60C6 /* Freedom.Theme.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Freedom.Theme.wav; path = "Assets.xcassets/sounds-1/Freedom.Theme.dataset/Freedom.Theme.wav"; sourceTree = "<group>"; };
+		EE0223261C82E29E00AF60C6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		EE0223281C82F04D00AF60C6 /* and.some.i.assume.are.good.people.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = and.some.i.assume.are.good.people.wav; path = Assets.xcassets/sounds/and.some.i.assume.are.good.people.wav; sourceTree = "<group>"; };
+		EE0223291C82F04D00AF60C6 /* I.could.shoot.somebody.and.not.lose.voters.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = I.could.shoot.somebody.and.not.lose.voters.wav; path = Assets.xcassets/sounds/I.could.shoot.somebody.and.not.lose.voters.wav; sourceTree = "<group>"; };
+		EE02232A1C82F04D00AF60C6 /* I.don.t.wear.a.tupay.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = I.don.t.wear.a.tupay.wav; path = Assets.xcassets/sounds/I.don.t.wear.a.tupay.wav; sourceTree = "<group>"; };
+		EE02232B1C82F04D00AF60C6 /* i.just.want.them.to.suffer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = i.just.want.them.to.suffer.wav; path = Assets.xcassets/sounds/i.just.want.them.to.suffer.wav; sourceTree = "<group>"; };
+		EE02232C1C82F04D00AF60C6 /* so.probably.i.ll.sue.her.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = so.probably.i.ll.sue.her.wav; path = Assets.xcassets/sounds/so.probably.i.ll.sue.her.wav; sourceTree = "<group>"; };
+		EE02232D1C82F04D00AF60C6 /* sounds.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sounds.txt; path = Assets.xcassets/sounds/sounds.txt; sourceTree = "<group>"; };
+		EE02232E1C82F04D00AF60C6 /* the.american.dream.is.dead.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = the.american.dream.is.dead.wav; path = Assets.xcassets/sounds/the.american.dream.is.dead.wav; sourceTree = "<group>"; };
+		EE02232F1C82F04D00AF60C6 /* They.have.to.go.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = They.have.to.go.wav; path = Assets.xcassets/sounds/They.have.to.go.wav; sourceTree = "<group>"; };
+		EE0223301C82F04D00AF60C6 /* They.re.very.dishonest.people.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = They.re.very.dishonest.people.wav; path = Assets.xcassets/sounds/They.re.very.dishonest.people.wav; sourceTree = "<group>"; };
+		EE0223311C82F04D00AF60C6 /* Trump.The.Wall.Just.Got.Ten.Feet.Higher.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Trump.The.Wall.Just.Got.Ten.Feet.Higher.wav; path = Assets.xcassets/sounds/Trump.The.Wall.Just.Got.Ten.Feet.Higher.wav; sourceTree = "<group>"; };
+		EE0223321C82F04D00AF60C6 /* We.Have.Losers.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = We.Have.Losers.wav; path = Assets.xcassets/sounds/We.Have.Losers.wav; sourceTree = "<group>"; };
+		EE0223331C82F04D00AF60C6 /* you.fired.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = you.fired.wav; path = Assets.xcassets/sounds/you.fired.wav; sourceTree = "<group>"; };
+		EE0223341C82F04D00AF60C6 /* you.want.some-.you.want.some-.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "you.want.some-.you.want.some-.wav"; path = "Assets.xcassets/sounds/you.want.some-.you.want.some-.wav"; sourceTree = "<group>"; };
+		EE0223351C82F04D00AF60C6 /* All.Talk.No.Action.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = All.Talk.No.Action.wav; path = Assets.xcassets/sounds/All.Talk.No.Action.wav; sourceTree = "<group>"; };
+		EE0223361C82F04D00AF60C6 /* Donald.Trump.Says._China_.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Donald.Trump.Says._China_.wav; path = Assets.xcassets/sounds/Donald.Trump.Says._China_.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +142,7 @@
 		CCE80E4F1C817A2900EAAC89 = {
 			isa = PBXGroup;
 			children = (
+				EE0223261C82E29E00AF60C6 /* Launch Screen.storyboard */,
 				CCE80E5A1C817A2900EAAC89 /* TrumpeJump */,
 				CCE80E591C817A2900EAAC89 /* Products */,
 				4F502D599337918BA120D3E9 /* Pods */,
@@ -128,6 +161,21 @@
 		CCE80E5A1C817A2900EAAC89 /* TrumpeJump */ = {
 			isa = PBXGroup;
 			children = (
+				EE0223281C82F04D00AF60C6 /* and.some.i.assume.are.good.people.wav */,
+				EE0223291C82F04D00AF60C6 /* I.could.shoot.somebody.and.not.lose.voters.wav */,
+				EE02232A1C82F04D00AF60C6 /* I.don.t.wear.a.tupay.wav */,
+				EE02232B1C82F04D00AF60C6 /* i.just.want.them.to.suffer.wav */,
+				EE02232C1C82F04D00AF60C6 /* so.probably.i.ll.sue.her.wav */,
+				EE02232D1C82F04D00AF60C6 /* sounds.txt */,
+				EE02232E1C82F04D00AF60C6 /* the.american.dream.is.dead.wav */,
+				EE02232F1C82F04D00AF60C6 /* They.have.to.go.wav */,
+				EE0223301C82F04D00AF60C6 /* They.re.very.dishonest.people.wav */,
+				EE0223311C82F04D00AF60C6 /* Trump.The.Wall.Just.Got.Ten.Feet.Higher.wav */,
+				EE0223321C82F04D00AF60C6 /* We.Have.Losers.wav */,
+				EE0223331C82F04D00AF60C6 /* you.fired.wav */,
+				EE0223341C82F04D00AF60C6 /* you.want.some-.you.want.some-.wav */,
+				EE0223351C82F04D00AF60C6 /* All.Talk.No.Action.wav */,
+				EE0223361C82F04D00AF60C6 /* Donald.Trump.Says._China_.wav */,
 				EE0223221C82C3EE00AF60C6 /* Freedom.Theme.wav */,
 				CC5BE8A51C828653000F94CE /* SCCloud.swift */,
 				CC5BE8A61C828653000F94CE /* SCCloudGenerator.swift */,
@@ -219,18 +267,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0223441C82F04D00AF60C6 /* you.want.some-.you.want.some-.wav in Resources */,
+				EE02233F1C82F04D00AF60C6 /* They.have.to.go.wav in Resources */,
 				B0DEAF6E1C81D96E00159E06 /* middle.png in Resources */,
 				CCE80E691C817A2900EAAC89 /* LaunchScreen.storyboard in Resources */,
+				EE02233E1C82F04D00AF60C6 /* the.american.dream.is.dead.wav in Resources */,
 				B0DEAF6A1C81D96E00159E06 /* dt_arm_r.png in Resources */,
 				B0DEAF691C81D96E00159E06 /* dt_arm_l.png in Resources */,
+				EE0223381C82F04D00AF60C6 /* and.some.i.assume.are.good.people.wav in Resources */,
+				EE0223401C82F04D00AF60C6 /* They.re.very.dishonest.people.wav in Resources */,
 				CCE80E661C817A2900EAAC89 /* Assets.xcassets in Resources */,
+				EE0223461C82F04D00AF60C6 /* Donald.Trump.Says._China_.wav in Resources */,
+				EE0223451C82F04D00AF60C6 /* All.Talk.No.Action.wav in Resources */,
+				EE02233D1C82F04D00AF60C6 /* sounds.txt in Resources */,
+				EE0223431C82F04D00AF60C6 /* you.fired.wav in Resources */,
+				EE02233C1C82F04D00AF60C6 /* so.probably.i.ll.sue.her.wav in Resources */,
 				CC876D4C1C821EF500377ECD /* endGame.storyboard in Resources */,
+				EE0223421C82F04D00AF60C6 /* We.Have.Losers.wav in Resources */,
 				EE0223231C82C3EE00AF60C6 /* Freedom.Theme.wav in Resources */,
 				B0DEAF6F1C81D96E00159E06 /* mil_stack.png in Resources */,
 				CC52A7BC1C823D2500C305DF /* Main.storyboard in Resources */,
 				CCE278AA1C81FD7900E48759 /* song.mp3 in Resources */,
+				EE0223271C82E29E00AF60C6 /* Launch Screen.storyboard in Resources */,
 				B0A11AA71C824D1C00B80AFB /* brick.png in Resources */,
+				EE02233B1C82F04D00AF60C6 /* i.just.want.them.to.suffer.wav in Resources */,
+				EE02233A1C82F04D00AF60C6 /* I.don.t.wear.a.tupay.wav in Resources */,
+				EE0223391C82F04D00AF60C6 /* I.could.shoot.somebody.and.not.lose.voters.wav in Resources */,
 				B0DEAF6C1C81D96E00159E06 /* dt_legs.png in Resources */,
+				EE0223411C82F04D00AF60C6 /* Trump.The.Wall.Just.Got.Ten.Feet.Higher.wav in Resources */,
 				B0DEAF6D1C81D96E00159E06 /* dt_torso.png in Resources */,
 				CCE80E611C817A2900EAAC89 /* (null) in Resources */,
 				B0DEAF6B1C81D96E00159E06 /* dt_head.png in Resources */,

@@ -8,6 +8,8 @@
 
 import UIKit
 import SpriteKit
+import AVKit
+import AVFoundation
 
 class EndGameViewController: UIViewController, NSXMLParserDelegate {
     var strXMLData:[String] = []
@@ -18,16 +20,23 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
     var passName:Bool=false
     var parser = NSXMLParser()
     
+    var trumpVoice:[String] = []
+    
     var clouds : SCCloudGenerator!
+
     
 //    @IBOutlet weak var newsBtn: UIButton!
     @IBOutlet weak var newsLabel: UILabel!
     
-    
+    var audioPlayer: AVAudioPlayer?
+
+    override func viewDidDisappear(animated: Bool) {
+     audioPlayer?.stop()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let url:String="http://feeds.washingtonpost.com/rss/rss_election-2012"
         let urlToSend: NSURL = NSURL(string: url)!
         // Parse the XML
@@ -52,6 +61,7 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
         } else {
             print("parse failure!")
         }
+        
         // Do any additional setup after loading the view.
         clouds = SCCloudGenerator()
         let skView = self.view as! SKView
@@ -63,6 +73,20 @@ class EndGameViewController: UIViewController, NSXMLParserDelegate {
         scene.scaleMode = .AspectFill
 
         skView.presentScene(scene)
+        
+        if let path = NSBundle.mainBundle().pathForResource("Trump.The.Wall.Just.Got.Ten.Feet.Higher", ofType: "wav") {
+            do{
+                try audioPlayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path), fileTypeHint: "wav")
+            }catch{
+                
+            }
+            if let sound = audioPlayer {
+                
+                sound.prepareToPlay()
+                
+                sound.play()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

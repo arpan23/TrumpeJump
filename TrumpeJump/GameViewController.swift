@@ -59,13 +59,13 @@ class GameViewController: UIViewController {
         longTouch = !longTouch;
     }
 
-//    @IBAction func switchThing(sender: AnyObject) {
-//        audioPlayer?.stop()
-//        let storyboard = UIStoryboard(name: "endGame", bundle: nil)
-//        let controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
-//        
-//        self.presentViewController(controller, animated: true, completion: nil)
-//    }
+    @IBAction func switchThing(sender: AnyObject) {
+        audioPlayer?.stop()
+        let storyboard = UIStoryboard(name: "endGame", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("InitialController") as UIViewController
+        
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
     @IBAction func turnMusicOff(sender: AnyObject) {
         
         var image: UIImage?;

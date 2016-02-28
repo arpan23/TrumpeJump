@@ -24,6 +24,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLP-Tr-9Qa">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Donald Trump" image="donladTrump"/>
+                                <connections>
+                                    <action selector="switchThing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Df7-i7-GHR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baE-9O-noG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
